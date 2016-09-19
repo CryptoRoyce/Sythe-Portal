@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> Play.Sythe </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/playSythe.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+div
+{
+    color: white;
+}
+</style>
+
+<body background="background.jpg">
+
+	<div class="container">
+
+		<div id="header" class="text">
+			<h1 id="fccStatus"></h1>
+			<h3 id="gameStatus"></h3>
+		</div>
+
+		<!--First Row-->
+
+		<div class="row">
+			<h1>
+		<div class="col-md-8">
+			<h1 id="streamerName"></h1>	
+			<!-- Watch live link -->
+			<center>
+				<h1 id="featuredStatus"></h1>
+			</center>
+		</div>
+		<div class="col-md-4">
+			<h1 id="streamerChat"></h1>
+		</div>
+			</h1>
+		</div>
+
+		<!--Second Row-->
+
+		<div class="row">
+
+		<div class="col-md-4">
+			<h1>			Play Games			</h1>
+		</div>
+		<div class="col-md-4">
+
+		</div>
+		<div class="col-md-4">		
+			<h1 id="scrapeInfo"></h1>	 
+		</div>
+		</div>
+
+		<!--Third Row-->
+
+		<div class="row">
+			<div class="col-md-4">
+				<a href="steam://connect/198.23.217.98:27015">Connect</a>	
+			</div>
+			<div class="col-md-4">
+
+			</div>
+			<div class="col-md-4">
+				<iframe src="https://discordapp.com/widget?id=158810801333862400&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+			</div>
+		</div>
+
+
+
+		<div class="row">
+			<div class="col-md-4">
+			<!-- TSARVAR SERVER WIDGET -->
+				<a href="http://tsarvar.com/servers/counter-strike-go/198.23.217.98:27015" data-tsarvarServerId="20985">Look server page [Sythe.org] 128 Tick | 1v1 Arenas | New York</a>
+				<script type="text/javascript" charset="utf-8" src="http://widget.tsarvar.com/loadWidget.js"></script>
+					<script type="text/javascript">
+					    (function(k){(window[k]||(window[k]=[])).push({
+					        element:'*[data-tsarvarServerId="20985"]',
+					        serverId:20985,
+					        serverIp:'198.23.217.98',
+					        serverPort:27015,
+					        blackMode:true
+					    });})('TsarvarWidgetQueue');
+					</script>
+			<!-- /TSARVAR SERVER WIDGET -->
+				
+			</div>
+			<div class="col-md-4">
+				
+			</div>
+			<div class="col-md-4">
+				
+			</div>
+		</div>
+
+</body>
+
+</html>
