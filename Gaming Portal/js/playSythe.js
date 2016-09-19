@@ -1,20 +1,3 @@
-//Scraper to change streamer list from another website.
-    function streamerScrape(){
-        request('http://www.reddit.com', function(err, resp, body){
-            if(!err && resp.statusCode == 200){
-                var $ = cheerio.load(body);
-                $('a.title', '#siteTable').each(function(){
-                    var url = $(this).attr('href');
-                    urls.push(url);
-                });
-                $("#scrapeInfo").html(urls);
-            }
-        });
-    }
-    streamerScrape();
-
-
-
 $(document).ready(function(){
 
 
@@ -31,6 +14,21 @@ $(document).ready(function(){
         cheerio = require('cheerio'),
         urls = [];
 
+
+//Scraper to change streamer list from another website.
+    function streamerScrape(){
+        request('http://www.reddit.com', function(err, resp, body){
+            if(!err && resp.statusCode == 200){
+                var $ = cheerio.load(body);
+                $('a.title', '#siteTable').each(function(){
+                    var scrapeURL = $(this).attr('href');
+                    urls.push(scrapeURL);
+                });
+                $("#scrapeInfo").html(urls);
+            }
+        });
+    }
+    streamerScrape();
 
 
 //Relays information to be displayed in the playSythe.html file.
